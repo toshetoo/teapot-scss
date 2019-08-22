@@ -1,0 +1,24 @@
+{
+  "name": "teapot-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toshetoo/teapot-scss.git"
+  },
+  "author": "Todor Ivanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toshetoo/teapot-scss/issues"
+  },
+  "homepage": "https://github.com/toshetoo/teapot-scss#readme",
+  "devDependencies": {
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
