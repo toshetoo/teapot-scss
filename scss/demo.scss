@@ -1,0 +1,20 @@
+.body-wrapper {
+    height: 100vh;
+    display: flex;
+
+    .side-nav {
+        width: 20%;
+        height: 100%;
+        background-color: gray;
+
+        .nav-item .item {
+            display: block;
+        }
+    }
+
+    .main-content {
+        width: 80%;
+        height: 100%;
+        background-color: #f5deb31c;
+    }
+}
