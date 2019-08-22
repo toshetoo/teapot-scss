@@ -1,0 +1,13 @@
+.body-wrapper {
+  height: 100vh;
+  display: flex; }
+  .body-wrapper .side-nav {
+    width: 20%;
+    height: 100%;
+    background-color: gray; }
+    .body-wrapper .side-nav .nav-item .item {
+      display: block; }
+  .body-wrapper .main-content {
+    width: 80%;
+    height: 100%;
+    background-color: #f5deb31c; }
