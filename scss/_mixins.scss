@@ -1,0 +1,15 @@
+$iterations: 5;
+$offset: 0.5;
+$measuringUnit: 'rem';
+
+@mixin generator($className, $styleName) {
+  $i: 0;
+  $value: 0;
+  @while $i <= $iterations {
+    #{$className + $i} { 
+      #{$styleName}: #{$value + $measuringUnit};
+    }
+    $value: $value + $offset;
+    $i: $i + 1;
+  }
+}

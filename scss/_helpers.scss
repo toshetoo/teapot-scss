@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 /* DISPLAY PROP HELPERS */
 .d-flex {
     display: flex;
@@ -18,3 +20,15 @@
 .d-inline {
     display: inline;
 }
+
+/* MARGIN PROP HELPERS */
+@include generator('mr-', 'margin-right');
+@include generator('ml-', 'margin-left');
+@include generator('mt-', 'margin-top');
+@include generator('mb-', 'margin-bottom');
+
+/* PADDING PROP HELPERS */
+@include generator('pr-', 'padding-right');
+@include generator('pl-', 'padding-left');
+@include generator('pt-', 'padding-top');
+@include generator('pb-', 'padding-bottom');
