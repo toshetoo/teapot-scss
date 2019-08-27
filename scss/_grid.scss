@@ -1,3 +1,4 @@
+@import "mixins.scss";
 /* AUTOWRAPPED COLUMNS */
 
 .row {
@@ -10,5 +11,40 @@
         flex-basis: 0;
         flex-grow: 1;
         max-width: 100%;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .row {
+        @include columnGenerator('xs');
+    }    
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .row {
+        @include columnGenerator('sm');
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .row {
+        @include columnGenerator('md');
+    }    
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .row {
+        @include columnGenerator('lg');
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .row {
+        @include columnGenerator('x-lg');
     }
 }

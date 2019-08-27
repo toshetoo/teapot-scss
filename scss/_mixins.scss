@@ -13,3 +13,16 @@ $measuringUnit: 'rem';
     $i: $i + 1;
   }
 }
+
+$maxColumns: 12;
+$columnsMeasuringUnit: '%';
+@mixin columnGenerator($columnSuffix) {
+  $i: 1;
+  @while $i <= $maxColumns {
+    .col-#{$columnSuffix}-#{$i} {
+      width: #{((100 / $maxColumns) * $i) + $columnsMeasuringUnit}
+    }
+
+    $i: $i + 1;
+  }
+}
