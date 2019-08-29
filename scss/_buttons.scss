@@ -1,10 +1,4 @@
-@import 'mixins';
-
-$mainButtonColor: #1e90ff;
-$infoButtonColor: #808080;
-$successButtonColor: #008000;
-$warnButtonColor: #ffff00;
-$dangerButtonColor: #ff0000;
+@import 'variables.scss';
 
 button, .btn {
     border-radius: 4px;
