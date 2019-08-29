@@ -1,0 +1,40 @@
+@import 'mixins';
+
+$mainButtonColor: #1e90ff;
+$infoButtonColor: #808080;
+$successButtonColor: #008000;
+$warnButtonColor: #ffff00;
+$dangerButtonColor: #ff0000;
+
+button, .btn {
+    border-radius: 4px;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    @include buttonGenerator('&.main', $mainButtonColor);
+    @include buttonGenerator('&.info', $infoButtonColor);
+    @include buttonGenerator('&.success', $successButtonColor);
+    @include buttonGenerator('&.warn', $warnButtonColor);
+    @include buttonGenerator('&.danger', $dangerButtonColor);
+
+    &.link {
+        background-color: transparent;
+        color: blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

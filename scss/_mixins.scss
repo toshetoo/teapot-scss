@@ -27,3 +27,25 @@ $columnsMeasuringUnit: '%';
     $i: $i + 1;
   }
 }
+
+@mixin buttonGenerator($className, $btnColor) {
+  #{$className} {
+    background-color:$btnColor;
+    color: white;
+
+    &:hover {
+        background-color: darken($color: $btnColor, $amount: 10%)
+    }
+  }
+
+  #{$className}-outline {
+    background-color: transparent;
+    color: $btnColor;
+    border: 1px solid $btnColor;
+
+    &:hover {
+        background-color: darken($color: $btnColor, $amount: 10%);
+        color: white;
+    }
+  }
+}
