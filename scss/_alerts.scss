@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+.alert {    
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+    .alert-header{
+        padding: 10px;
+        font-size: 1.5rem;
+
+        .title {
+
+        }
+    }
+
+    .alert-body {
+        padding: 10px;
+        padding-bottom: 5px;
+
+        .body-text {
+
+        }
+    }
+
+    &.main {
+        background-color: $mainButtonColor
+    }
+
+    &.info {
+        background-color: $infoButtonColor
+    }
+
+    &.warn {
+        background-color: $warnButtonColor
+    }
+
+    &.danger {
+        background-color: $dangerButtonColor
+    }
+
+    &.success {
+        background-color: $successButtonColor
+    }
+}
