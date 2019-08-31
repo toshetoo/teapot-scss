@@ -32,3 +32,15 @@ button, .btn {
         }
     }
 }
+
+.btn-group {
+    display: inline-block;
+
+    .btn-group-icon {
+        display: inline-block;
+    }
+
+    .btn-group-body {
+        display: inline-block;
+    }
+}

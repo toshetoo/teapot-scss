@@ -6,6 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teapot SCSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <link rel="stylesheet" href="./css/demo.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -82,6 +83,46 @@
             <h4>Markup</h4>
             <pre>
 &lt;button&gt;Simple&nbsp;button&lt;/button&gt;<br/>&lt;button&nbsp;class=&quot;main-outline&quot;&gt;Main&nbsp;button&lt;/button&gt;<br/>&lt;button&nbsp;class=&quot;info-outline&quot;&gt;info&nbsp;button&lt;/button&gt;<br/>&lt;button&nbsp;class=&quot;warn-outline&quot;&gt;warn&nbsp;button&lt;/button&gt;<br/>&lt;button&nbsp;class=&quot;danger-outline&quot;&gt;danger&nbsp;button&lt;/button&gt;<br/>&lt;button&nbsp;class=&quot;success-outline&quot;&gt;success&nbsp;button&lt;/button&gt;
+            </pre>
+
+            <hr/>
+            <h3>Button groups</h3>
+            <div class="btn btn-group main">
+                <div class="btn-group-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="btn-group-body">
+                    Mobile
+                </div>
+            </div>
+
+            <div class="btn btn-group main">
+                <div class="btn-group-body">
+                    Mobile
+                </div>
+                <div class="btn-group-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+            </div>
+            
+            <h4>Markup</h4>
+            <pre>
+&lt;div class=&quot;btn btn-group main&quot;&gt;
+    &lt;div class=&quot;btn-group-icon&quot;&gt;
+        &lt;i class=&quot;fas fa-clock&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn-group-body&quot;&gt;
+        Mobile
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="btn btn-group main"&gt;
+    &lt;div class="btn-group-body"&gt;
+        Mobile
+    &lt;/div&gt;
+    &lt;div class="btn-group-icon"&gt;
+        &lt;i class="fas fa-clock"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
             </pre>
         </div>
     </div>
