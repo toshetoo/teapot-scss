@@ -1,0 +1,30 @@
+div.badge {
+    display: flex;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    cursor: pointer;
+    margin: 1px;
+    border-radius: 4px;
+
+    &.badge-round {
+        border-radius: 50%;
+        width: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .badge-label {
+        cursor: pointer;
+    }
+
+    &.basic {
+        border: 1px solid black;
+    }
+
+    @include badgeGenerator('&.main', $mainButtonColor);
+    @include badgeGenerator('&.info', $infoButtonColor);
+    @include badgeGenerator('&.success', $successButtonColor);
+    @include badgeGenerator('&.warn', $warnButtonColor);
+    @include badgeGenerator('&.danger', $dangerButtonColor);
+}

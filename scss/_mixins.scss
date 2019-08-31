@@ -49,3 +49,10 @@ $measuringUnit: 'rem';
     }
   }
 }
+
+@mixin badgeGenerator($className, $btnColor) {
+  #{$className} {
+    background-color:$btnColor;
+    color: white;
+  }
+}
