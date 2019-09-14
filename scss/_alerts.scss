@@ -4,14 +4,18 @@
     width: 300px;
     border-radius: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    box-shadow: 0px 6px 28px 0px rgba(0,0,0,0.1);
+    background-position: 0 0;
+    padding: .5em;
 
     .alert-header{
         padding: 10px;
         font-size: 1.5rem;
 
         .title {
-
+            font-weight: 600;
+            line-height: 1.2;
         }
     }
 
@@ -42,5 +46,23 @@
 
     &.success {
         background-color: $successButtonColor
+    }
+
+    &.animated {
+        &.fade-out {
+            transition: opacity .5s linear;
+            opacity: 0;
+        }
+
+        &.fade-in {
+            transition: opacity .5s linear;
+            opacity: 1;
+        }
+
+        &.move {
+            transition: left .5s ease, top .5s ease, right .5s ease, bottom .5s ease;
+            right: 20px;
+            top: 20px;
+        }       
     }
 }
