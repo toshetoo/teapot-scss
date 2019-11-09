@@ -57,19 +57,27 @@
         position: relative;
         overflow: hidden;
         
-        &.image {            
-
-            .placeholder-line {
-                position: relative;
-                margin-left: 3em;
+        &.image {
+            &.small {
+                .placeholder-line {
+                    position: relative;
+                    margin-left: 3em;
+                }
             }
 
-            // &:after {
-            //     display: block;
-            //     height: .85em;
-            //     content: '';
-            //     margin-left: 3em;
-            // }
+            &.medium {
+                .placeholder-line {
+                    position: relative;
+                    margin-left: 5em;
+                }
+            }
+
+            &.big {
+                .placeholder-line {
+                    position: relative;
+                    margin-left: 7em;
+                }
+            }
         }
     }
 }
