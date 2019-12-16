@@ -1,6 +1,6 @@
 {
   "name": "teapot-scss",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,5 @@
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
 }
