@@ -6,6 +6,10 @@
     overflow: hidden;
     animation-iteration-count: infinite;
 
+    &.dark {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0, rgba(255, 255, 255, 0.15) 15%, rgba(255, 255, 255, 0.8) 30%);
+    }
+
     &.fluid {
         max-width: none;
     }
